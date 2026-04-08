@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephas Consultancy AB — Innovative Software Solutions</title>
+    <meta name="description" content="Elephas Consultancy AB delivers cutting-edge software development and IT consultancy services from Kosta, Sweden.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Elephas Consultancy" class="logo-img">
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#services" data-en="Services" data-sv="Tj&auml;nster">Services</a></li>
+                    <li><a href="#about" data-en="About" data-sv="Om oss">About</a></li>
+                    <li><a href="#contact" data-en="Contact" data-sv="Kontakt">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang="sv">SV</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+        <div class="container hero-content">
+            <h1 class="fade-in" data-en="Innovative Software Solutions" data-sv="Innovativa mjukvarulösningar">Innovative Software Solutions</h1>
+            <p class="hero-sub fade-in" data-en="Cutting-edge software development and IT consultancy services to help your organisation achieve its goals and drive success." data-sv="Avancerad mjukvaruutveckling och IT-konsulttjänster som hjälper din organisation att nå sina mål och driva framgång.">Cutting-edge software development and IT consultancy services to help your organisation achieve its goals and drive success.</p>
+            <a href="#contact" class="btn btn-primary fade-in" data-en="Get in Touch" data-sv="Kontakta oss">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="fade-in" data-en="Services" data-sv="Tjänster">Services</h2>
+            <p class="section-sub fade-in" data-en="Custom solutions and strategic guidance tailored to your needs." data-sv="Skräddarsydda lösningar och strategisk vägledning anpassade efter era behov.">Custom solutions and strategic guidance tailored to your needs.</p>
+            <div class="services-grid">
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#3b82f6" stroke-width="2"/><path d="M12 18l4 4 8-8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Power Platform Development" data-sv="Power Platform-utveckling">Power Platform Development</h3>
+                    <p data-en="We create custom applications, automate processes, and gain insights into data through Power Apps, Power Automate, and Power BI." data-sv="Vi skapar anpassade applikationer, automatiserar processer och får insikter i data genom Power Apps, Power Automate och Power BI.">We create custom applications, automate processes, and gain insights into data through Power Apps, Power Automate, and Power BI.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="12" cy="20" r="5" stroke="#3b82f6" stroke-width="2"/><circle cx="28" cy="20" r="5" stroke="#3b82f6" stroke-width="2"/><path d="M17 20h6" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-en="Systems Integration" data-sv="Systemintegration">Systems Integration</h3>
+                    <p data-en="We create and consume APIs to hook systems together, creating seamless user experiences whilst improving data quality." data-sv="Vi skapar och konsumerar API:er för att koppla samman system, skapa sömlösa användarupplevelser och förbättra datakvaliteten.">We create and consume APIs to hook systems together, creating seamless user experiences whilst improving data quality.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="12" height="16" rx="2" stroke="#3b82f6" stroke-width="2"/><rect x="22" y="14" width="12" height="16" rx="2" stroke="#3b82f6" stroke-width="2"/><path d="M18 20l4 2-4 2" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Data Migration &amp; Cleansing" data-sv="Datamigrering &amp; datarensning">Data Migration &amp; Cleansing</h3>
+                    <p data-en="We can help you get your data into shape and move it where it needs to go." data-sv="Vi hjälper dig att få ordning på din data och flytta den dit den behöver vara.">We can help you get your data into shape and move it where it needs to go.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M10 30V14l10-6 10 6v16" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round"/><path d="M16 30v-8h8v8" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en=".NET Development" data-sv=".NET-utveckling">.NET Development</h3>
+                    <p data-en="We design, build, and implement applications using Microsoft's .NET platform and C# to create a wide array of software solutions." data-sv="Vi designar, bygger och implementerar applikationer med Microsofts .NET-plattform och C# för att skapa ett brett utbud av mjukvarulösningar.">We design, build, and implement applications using Microsoft's .NET platform and C# to create a wide array of software solutions.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 28l6-8 6 4 6-10 6 6" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="20" r="2" fill="#f59e0b"/></svg>
+                    </div>
+                    <h3 data-en="Project Delivery" data-sv="Projektleverans">Project Delivery</h3>
+                    <p data-en="Experienced in leading and providing technical assurance on a wide range of projects across different sectors." data-sv="Erfaren inom att leda och ge teknisk kvalitetssäkring i en mängd projekt inom olika sektorer.">Experienced in leading and providing technical assurance on a wide range of projects across different sectors.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="#3b82f6" stroke-width="2"/><path d="M20 12v8l5 5" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Technology Strategy" data-sv="Teknikstrategi">Technology Strategy</h3>
+                    <p data-en="We help you create an effective plan to prioritise and budget accordingly as technology evolves." data-sv="Vi hjälper dig skapa en effektiv plan för att prioritera och budgetera när tekniken utvecklas.">We help you create an effective plan to prioritise and budget accordingly as technology evolves.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 data-en="About Elephas Consultancy" data-sv="Om Elephas Consultancy">About Elephas Consultancy</h2>
+                    <p data-en="Elephas Consultancy AB is a software development business based in Kosta, Sweden. We deliver cutting-edge software development and IT consultancy services, helping organisations achieve their goals through custom solutions and strategic guidance." data-sv="Elephas Consultancy AB är ett mjukvaruutvecklingsföretag baserat i Kosta, Sverige. Vi levererar avancerad mjukvaruutveckling och IT-konsulttjänster och hjälper organisationer att nå sina mål genom skräddarsydda lösningar och strategisk vägledning.">Elephas Consultancy AB is a software development business based in Kosta, Sweden. We deliver cutting-edge software development and IT consultancy services, helping organisations achieve their goals through custom solutions and strategic guidance.</p>
+                    <p data-en="Whether you need a Power Platform solution, systems integration, data migration, or a full .NET application — we bring the expertise and dedication to deliver results." data-sv="Oavsett om du behöver en Power Platform-lösning, systemintegration, datamigrering eller en komplett .NET-applikation — vi har expertisen och engagemanget att leverera resultat.">Whether you need a Power Platform solution, systems integration, data migration, or a full .NET application — we bring the expertise and dedication to deliver results.</p>
+                </div>
+                <div class="about-details fade-in">
+                    <div class="detail-card">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 6 9 6 14c0 8 10 14 10 14s10-6 10-14c0-5-4-10-10-10z" stroke="#3b82f6" stroke-width="2"/><circle cx="16" cy="14" r="3" fill="#f59e0b"/></svg>
+                        <strong data-en="Location" data-sv="Plats">Location</strong>
+                        <p>Kosta, Sweden</p>
+                    </div>
+                    <div class="detail-card">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="20" rx="3" stroke="#3b82f6" stroke-width="2"/><path d="M4 12h24" stroke="#3b82f6" stroke-width="2"/><circle cx="16" cy="20" r="2" fill="#f59e0b"/></svg>
+                        <strong data-en="Focus" data-sv="Fokus">Focus</strong>
+                        <p data-en="Microsoft Technologies" data-sv="Microsoftteknologier">Microsoft Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="fade-in" data-en="Get in Touch" data-sv="Kontakta oss">Get in Touch</h2>
+            <p class="section-sub fade-in" data-en="Have a project in mind? Let's talk about how we can help." data-sv="Har du ett projekt i tankarna? Låt oss prata om hur vi kan hjälpa till.">Have a project in mind? Let's talk about how we can help.</p>
+            <div class="contact-grid">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-en="Name" data-sv="Namn">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-en="Email" data-sv="E-post">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-sv="Meddelande">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-en="Send Message" data-sv="Skicka meddelande">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+                <div class="contact-info fade-in">
+                    <div class="contact-detail">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C9 3 5 7.5 5 12c0 7 9 13 9 13s9-6 9-13c0-4.5-4-9-9-9z" stroke="#3b82f6" stroke-width="2"/><circle cx="14" cy="12" r="2.5" fill="#f59e0b"/></svg>
+                        <div>
+                            <strong data-en="Address" data-sv="Adress">Address</strong>
+                            <p>Edavägen 9<br>Kosta, Sweden</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="4" stroke="#3b82f6" stroke-width="2"/><path d="M9 12.5V19h2.5v-6.5H9zm1.25-1.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM13 19h2.5v-3.5c0-1 .5-1.5 1.25-1.5s1.25.5 1.25 1.5V19H20.5v-4c0-2-1-3-2.5-3-1 0-1.75.5-2.25 1.25V12.5H13V19z" fill="#3b82f6"/></svg>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://www.linkedin.com/in/leonardhulley" target="_blank" rel="noopener noreferrer">Leonard Hulley</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Elephas Consultancy AB. <span data-en="All rights reserved." data-sv="Alla rättigheter förbehållna.">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
