@@ -195,7 +195,16 @@ img {
 /* ===== Hero ===== */
 .hero {
     padding: 160px 0 100px;
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    background:
+        /* Grid pattern */
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        /* Base gradient */
+        linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    background-size:
+        60px 60px,
+        60px 60px,
+        100% 100%;
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -204,23 +213,72 @@ img {
 .hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    top: -20%;
+    right: -5%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 65%);
     border-radius: 50%;
 }
 
 .hero::after {
     content: '';
     position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+    bottom: -20%;
+    left: -5%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 65%);
     border-radius: 50%;
+}
+
+/* Floating geometric shapes */
+.hero-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.shape {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    right: 8%;
+    top: 15%;
+    transform: rotate(15deg);
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    right: 15%;
+    top: 35%;
+    transform: rotate(-10deg);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.shape-3 {
+    width: 120px;
+    height: 120px;
+    right: 30%;
+    bottom: 20%;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    border-color: rgba(245, 158, 11, 0.15);
+}
+
+.shape-4 {
+    width: 80px;
+    height: 80px;
+    right: 5%;
+    bottom: 25%;
+    transform: rotate(45deg);
 }
 
 .hero-content {
