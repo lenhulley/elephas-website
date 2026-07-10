@@ -20,6 +20,7 @@
     <meta property="og:url" content="{{ site.url }}{{ route[lang] }}">
     <meta property="og:locale" content="{% if lang == 'sv' %}sv_SE{% else %}en_GB{% endif %}">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/a11y.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,6 +53,7 @@
 </head>
 <body>
     {%- set n = nav[lang] %}
+    <a href="#main" class="skip-link">{% if lang == 'sv' %}Hoppa till innehållet{% else %}Skip to main content{% endif %}</a>
     <nav class="nav" id="nav">
         <div class="container nav-inner">
             <a href="{{ routes.home[lang] }}" class="logo" aria-label="Elephas Consultancy">
@@ -85,7 +87,7 @@
     </header>
     {%- endif %}
 
-    <main>
+    <main id="main">
         {{ content | safe }}
     </main>
 
@@ -138,5 +140,6 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/a11y.js"></script>
 </body>
 </html>

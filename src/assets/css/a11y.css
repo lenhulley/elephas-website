@@ -1,0 +1,452 @@
+/* ==========================================================================
+   Elephas — Accessibility controls
+   Skip link, font scaling, dark mode, reduced contrast, dyslexia font,
+   spacing, reduced motion, reading guide, settings panel
+   ========================================================================== */
+
+/* OpenDyslexic — only downloaded when the class is active */
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/opendyslexic-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/opendyslexic-bold.woff2') format('woff2');
+}
+
+/* ===== Skip link ===== */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    z-index: 1000;
+    padding: 10px 18px;
+    background: var(--navy);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border-radius: var(--radius);
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+/* ===== Font size levels (html font-size scales rem values) ===== */
+html.a11y-font-size-1 { font-size: 87.5%; }
+html.a11y-font-size-2 { font-size: 93.75%; }
+html.a11y-font-size-4 { font-size: 112.5%; }
+html.a11y-font-size-5 { font-size: 125%; }
+
+/* ===== Dark mode ===== */
+html.a11y-dark {
+    --navy: #b9cbe8;          /* headings — light on dark ground */
+    --navy-light: #234681;
+    --blue: #6ea8ff;
+    --blue-light: #8fbcff;
+    --text: #dbe4f0;
+    --text-light: #97a6bd;
+    --bg: #0f1826;            /* alt sections */
+    --white: #16213a;         /* page + cards */
+    --border: #2a3a57;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.45), 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Places where --navy is used as a surface or on amber — keep the real navy */
+html.a11y-dark .hero,
+html.a11y-dark .page-hero,
+html.a11y-dark .cta-band {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(135deg, #16294a 0%, #1d3a6b 100%);
+    background-size: 60px 60px, 60px 60px, 100% 100%;
+    color: #ffffff;
+}
+
+html.a11y-dark .btn-outline {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+html.a11y-dark .btn-outline:hover {
+    border-color: #ffffff;
+}
+
+html.a11y-dark .btn-primary {
+    color: #1a365d;
+}
+
+html.a11y-dark .btn-nav {
+    background: #234681;
+    color: #ffffff;
+}
+
+html.a11y-dark .btn-nav:hover {
+    background: #2d5498;
+}
+
+html.a11y-dark .steps li::before {
+    background: #234681;
+    color: #ffffff;
+}
+
+html.a11y-dark .footer {
+    background: #0b1220;
+}
+
+html.a11y-dark .nav {
+    background: rgba(13, 20, 33, 0.95);
+}
+
+html.a11y-dark .logo-img {
+    filter: brightness(0) invert(1);
+    opacity: 0.92;
+}
+
+html.a11y-dark .nav-toggle span {
+    background: var(--text);
+}
+
+html.a11y-dark .form-status.success {
+    color: #4ade80;
+}
+
+html.a11y-dark .form-status.error {
+    color: #f87171;
+}
+
+/* ===== Reduced contrast (light) ===== */
+html.a11y-low-contrast {
+    --navy: #3d5678;
+    --blue: #5088b8;
+    --amber: #d19a3d;
+    --amber-hover: #c08a30;
+    --text: #4a5568;
+    --text-light: #8494a8;
+    --bg: #f1efeb;
+    --white: #faf9f6;
+    --border: #e5e1da;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Combined dark + reduced contrast */
+html.a11y-dark.a11y-low-contrast {
+    --navy: #a3b2c9;
+    --blue: #7da3d6;
+    --text: #c2cbd9;
+    --text-light: #8d99ab;
+    --bg: #141c2a;
+    --white: #1b2538;
+    --border: #2c3950;
+}
+
+/* ===== Dyslexia-friendly font ===== */
+html.a11y-dyslexia-font body,
+html.a11y-dyslexia-font button,
+html.a11y-dyslexia-font input,
+html.a11y-dyslexia-font textarea {
+    font-family: 'OpenDyslexic', 'Inter', system-ui, sans-serif;
+}
+
+/* ===== Increased spacing ===== */
+html.a11y-wide-spacing {
+    letter-spacing: 0.08em;
+    word-spacing: 0.16em;
+}
+
+html.a11y-wide-spacing h1,
+html.a11y-wide-spacing h2,
+html.a11y-wide-spacing h3 {
+    letter-spacing: 0;
+}
+
+html.a11y-wide-spacing p,
+html.a11y-wide-spacing li,
+html.a11y-wide-spacing td {
+    line-height: 1.9;
+}
+
+/* ===== Reduced motion (manual override) ===== */
+html.a11y-reduced-motion *,
+html.a11y-reduced-motion *::before,
+html.a11y-reduced-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+html.a11y-reduced-motion .fade-in {
+    opacity: 1;
+    transform: none;
+}
+
+/* ===== Reading guide ===== */
+.a11y-reading-shade {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: rgba(9, 16, 28, 0.5);
+    pointer-events: none;
+    z-index: 9998;
+}
+
+html:not(.a11y-reading-guide) .a11y-reading-shade {
+    display: none;
+}
+
+html.a11y-dark .a11y-reading-shade {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* ===== Trigger button ===== */
+.a11y-trigger {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: background var(--transition), transform var(--transition);
+}
+
+html.a11y-dark .a11y-trigger {
+    background: #234681;
+}
+
+.a11y-trigger:hover {
+    background: var(--blue);
+    transform: scale(1.05);
+}
+
+.a11y-trigger svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ===== Panel ===== */
+.a11y-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    z-index: 10000;
+    transform: translateX(105%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.a11y-panel.open {
+    transform: translateX(0);
+}
+
+@media (max-width: 400px) {
+    .a11y-panel {
+        width: 100%;
+    }
+}
+
+.a11y-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.a11y-panel-header h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+}
+
+.a11y-panel-close {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    color: var(--text-light);
+}
+
+.a11y-panel-close:hover {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.a11y-panel-body {
+    padding: 8px 24px 32px;
+}
+
+.a11y-control-group {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.a11y-control-group:last-child {
+    border-bottom: none;
+}
+
+.a11y-control-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.a11y-fontsize-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.a11y-fontsize-controls button {
+    flex: 1;
+    height: 40px;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    color: var(--text);
+    border-radius: var(--radius);
+    transition: background var(--transition);
+}
+
+.a11y-fontsize-controls button:hover {
+    background: var(--bg);
+}
+
+.a11y-fontsize-controls button.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #ffffff;
+}
+
+html.a11y-dark .a11y-fontsize-controls button.active {
+    color: #0b1220;
+}
+
+.a11y-fontsize-controls button[data-a11y-fontsize="1"] { font-size: 11px; }
+.a11y-fontsize-controls button[data-a11y-fontsize="2"] { font-size: 13px; }
+.a11y-fontsize-controls button[data-a11y-fontsize="3"] { font-size: 15px; }
+.a11y-fontsize-controls button[data-a11y-fontsize="4"] { font-size: 17px; }
+.a11y-fontsize-controls button[data-a11y-fontsize="5"] { font-size: 19px; }
+
+.a11y-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text);
+    border-radius: var(--radius);
+    transition: background var(--transition);
+    text-align: left;
+}
+
+.a11y-toggle:hover {
+    background: var(--bg);
+}
+
+.a11y-toggle svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.a11y-toggle-indicator {
+    margin-left: auto;
+    width: 36px;
+    height: 20px;
+    border-radius: 10px;
+    background: var(--border);
+    position: relative;
+    flex-shrink: 0;
+    transition: background var(--transition);
+}
+
+.a11y-toggle-indicator::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: transform 0.15s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.a11y-toggle[aria-checked="true"] .a11y-toggle-indicator {
+    background: var(--blue);
+}
+
+.a11y-toggle[aria-checked="true"] .a11y-toggle-indicator::after {
+    transform: translateX(16px);
+}
+
+.a11y-reset {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    border-radius: var(--radius);
+    transition: color var(--transition), background var(--transition);
+}
+
+.a11y-reset:hover {
+    color: #dc2626;
+    background: rgba(220, 38, 38, 0.06);
+}
+
+@media print {
+    .a11y-trigger,
+    .a11y-panel,
+    .a11y-reading-shade {
+        display: none !important;
+    }
+}
