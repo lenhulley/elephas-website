@@ -744,6 +744,45 @@ a.service-card:hover .card-more {
     margin-bottom: 12px;
 }
 
+/* ===== About intro (portrait + prose) ===== */
+.about-intro {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.about-portrait {
+    margin: 0;
+}
+
+.about-portrait img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-portrait figcaption {
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.about-portrait figcaption strong {
+    display: block;
+    color: var(--navy);
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 860px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
 /* ===== Facts (about) ===== */
 .facts {
     display: grid;
