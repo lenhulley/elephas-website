@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    {%- set route = routes[routeKey] %}
+    {%- if noindex %}
+    <meta name="robots" content="noindex">
+    {%- else %}
+    <link rel="canonical" href="{{ site.url }}{{ route[lang] }}">
+    <link rel="alternate" hreflang="sv" href="{{ site.url }}{{ route.sv }}">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ route.en }}">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ route.sv }}">
+    {%- endif %}
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ route[lang] }}">
+    <meta property="og:locale" content="{% if lang == 'sv' %}sv_SE{% else %}en_GB{% endif %}">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+    {%- if routeKey == "home" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Elephas Consultancy AB",
+      "description": "{{ description }}",
+      "url": "{{ site.url }}{{ route[lang] }}",
+      "logo": "{{ site.url }}/images/logo.svg",
+      "founder": { "@type": "Person", "name": "Leonard Hulley" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Edavägen 9",
+        "addressLocality": "Kosta",
+        "addressCountry": "SE"
+      },
+      "areaServed": "SE",
+      "sameAs": ["{{ site.linkedin }}"]
+    }
+    </script>
+    {%- endif %}
+</head>
+<body>
+    {%- set n = nav[lang] %}
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="{{ routes.home[lang] }}" class="logo" aria-label="Elephas Consultancy">
+                <img src="/images/logo.svg" alt="Elephas Consultancy" class="logo-img">
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    {%- for link in n.links %}
+                    <li><a href="{{ link.url }}"{% if page.url == link.url or (link.url != routes.home[lang] and page.url.startsWith(link.url)) %} class="active"{% endif %}>{{ link.label }}</a></li>
+                    {%- endfor %}
+                    <li class="nav-contact-item"><a href="{{ n.contact.url }}">{{ n.contact.label }}</a></li>
+                </ul>
+                <a href="{{ n.contact.url }}" class="btn btn-nav">{{ n.contact.label }}</a>
+                {%- if not noindex %}
+                <a href="{{ route.en if lang == 'sv' else route.sv }}" class="lang-toggle" title="{{ n.langSwitch.title }}" lang="{{ 'en' if lang == 'sv' else 'sv' }}">{{ n.langSwitch.label }}</a>
+                {%- endif %}
+                <button class="nav-toggle" id="navToggle" aria-label="{% if lang == 'sv' %}Öppna menyn{% else %}Toggle menu{% endif %}" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    {%- if heroTitle %}
+    <header class="page-hero">
+        <div class="container">
+            {%- if heroEyebrow %}<p class="eyebrow fade-in">{{ heroEyebrow }}</p>{% endif %}
+            <h1 class="fade-in">{{ heroTitle }}</h1>
+            {%- if heroSub %}<p class="hero-sub fade-in">{{ heroSub }}</p>{% endif %}
+        </div>
+    </header>
+    {%- endif %}
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {%- if cta != false %}
+    <section class="cta-band">
+        <div class="container">
+            <h2 class="fade-in">{{ ctaTitle or n.cta.title }}</h2>
+            <p class="fade-in">{{ ctaSub or n.cta.sub }}</p>
+            <a href="{{ n.contact.url }}" class="btn btn-primary fade-in">{{ n.cta.button }}</a>
+        </div>
+    </section>
+    {%- endif %}
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="/images/logo.svg" alt="" class="footer-logo">
+                    <p>{{ n.footer.tagline }}</p>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ n.footer.servicesTitle }}</h3>
+                    <ul>
+                        {%- for link in n.footer.services %}
+                        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                        {%- endfor %}
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ n.footer.companyTitle }}</h3>
+                    <ul>
+                        {%- for link in n.footer.company %}
+                        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                        {%- endfor %}
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>{{ n.footer.contactTitle }}</h3>
+                    <ul>
+                        <li>{{ site.address.street }}, {{ site.address.city }}</li>
+                        <li>{% if lang == 'sv' %}{{ site.address.countrySv }}{% else %}{{ site.address.country }}{% endif %}</li>
+                        <li><a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 {{ site.company }}. {{ n.footer.rights }}</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

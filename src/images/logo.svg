@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 52" fill="none">
+  <!-- Accent bar -->
+  <rect x="0" y="4" width="4" height="44" rx="2" fill="#f59e0b"/>
+  <!-- Company name -->
+  <text x="16" y="28" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#1a365d" letter-spacing="-0.5">Elephas Consultancy AB</text>
+</svg>

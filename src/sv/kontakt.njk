@@ -1,0 +1,56 @@
+---
+layout: base.njk
+lang: sv
+routeKey: contact
+permalink: /kontakt/
+title: "Kontakta Elephas Consultancy — berätta om ert projekt"
+description: "Kontakta Elephas Consultancy AB i Kosta. Berätta om ert projekt — du får svar från en utvecklare, inte en säljare."
+heroEyebrow: "Kontakt"
+heroTitle: "Berätta om ert projekt"
+heroSub: "Du får svar från en utvecklare, inte en säljare — oftast inom en arbetsdag."
+cta: false
+---
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <form action="https://formspree.io/f/maqlkbjw" method="POST" class="contact-form fade-in" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="company">Företag / organisation <span style="font-weight:400;color:var(--text-light)">(valfritt)</span></label>
+                    <input type="text" id="company" name="company" autocomplete="organization">
+                </div>
+                <div class="form-group">
+                    <label for="message">Meddelande</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Skicka meddelande</button>
+                <p class="form-status" id="formStatus" role="status"></p>
+            </form>
+            <div class="contact-info fade-in">
+                <div class="contact-detail">
+                    <strong>Tips för ett snabbt svar</strong>
+                    <ul class="contact-hints">
+                        <li><strong>Företag?</strong> Beskriv problemet, inte lösningen — vi hjälper till med resten.</li>
+                        <li><strong>Byrå eller designer?</strong> Nämn designverktyg, omfattning och deadline.</li>
+                        <li><strong>Samhällsprojekt?</strong> Berätta kort om finansiering och tidplan.</li>
+                    </ul>
+                </div>
+                <div class="contact-detail">
+                    <strong>Adress</strong>
+                    <p>Edavägen 9<br>Kosta, Sverige</p>
+                </div>
+                <div class="contact-detail">
+                    <strong>LinkedIn</strong>
+                    <p><a href="https://www.linkedin.com/in/leonardhulley" target="_blank" rel="noopener noreferrer">Leonard Hulley</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
