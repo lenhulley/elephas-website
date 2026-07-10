@@ -33,10 +33,14 @@
       "description": "{{ description }}",
       "url": "{{ site.url }}{{ route[lang] }}",
       "logo": "{{ site.url }}/images/logo.svg",
+      "legalName": "Elephas Consultancy AB",
+      "foundingDate": "2021",
+      "identifier": { "@type": "PropertyValue", "propertyID": "organisationsnummer", "value": "{{ site.orgnr }}" },
       "founder": { "@type": "Person", "name": "Leonard Hulley" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Edavägen 9",
+        "postalCode": "365 43",
         "addressLocality": "Kosta",
         "addressCountry": "SE"
       },
@@ -121,14 +125,14 @@
                 <div class="footer-col">
                     <h3>{{ n.footer.contactTitle }}</h3>
                     <ul>
-                        <li>{{ site.address.street }}, {{ site.address.city }}</li>
+                        <li>{{ site.address.street }}, {{ site.address.postcode }} {{ site.address.city }}</li>
                         <li>{% if lang == 'sv' %}{{ site.address.countrySv }}{% else %}{{ site.address.country }}{% endif %}</li>
                         <li><a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 {{ site.company }}. {{ n.footer.rights }}</p>
+                <p>&copy; 2026 {{ site.company }} &middot; Org.nr {{ site.orgnr }}. {{ n.footer.rights }}</p>
             </div>
         </div>
     </footer>
