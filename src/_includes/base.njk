@@ -92,11 +92,15 @@
     </main>
 
     {%- if cta != false %}
+    {%- set bookingUrl = site.booking[lang] or site.booking.en %}
     <section class="cta-band">
         <div class="container">
             <h2 class="fade-in">{{ ctaTitle or n.cta.title }}</h2>
             <p class="fade-in">{{ ctaSub or n.cta.sub }}</p>
             <a href="{{ n.contact.url }}" class="btn btn-primary fade-in">{{ n.cta.button }}</a>
+            {%- if bookingUrl %}
+            <p class="cta-alt fade-in"><a href="{{ bookingUrl }}" target="_blank" rel="noopener noreferrer">{{ n.booking.label }} →</a></p>
+            {%- endif %}
         </div>
     </section>
     {%- endif %}

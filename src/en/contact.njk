@@ -34,6 +34,18 @@ cta: false
                 <p class="form-status" id="formStatus" role="status"></p>
             </form>
             <div class="contact-info fade-in">
+                {%- set bookingUrl = site.booking.en %}
+                {%- if bookingUrl %}
+                <div class="booking-panel">
+                    <strong>{{ nav[lang].booking.label }}</strong>
+                    <p>{{ nav[lang].booking.hint }}</p>
+                    <a href="{{ bookingUrl }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ nav[lang].booking.label }}</a>
+                </div>
+                {%- endif %}
+                <div class="contact-detail">
+                    <strong>{% if lang == 'sv' %}Tillgänglighet{% else %}Availability{% endif %}</strong>
+                    <p>{{ nav[lang].availability }}</p>
+                </div>
                 <div class="contact-detail">
                     <strong>Tips for a fast answer</strong>
                     <ul class="contact-hints">

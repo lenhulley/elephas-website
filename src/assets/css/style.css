@@ -870,6 +870,39 @@ a.service-card:hover .card-more {
     margin-right: auto;
 }
 
+.cta-alt {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 0.9375rem;
+}
+
+.cta-alt a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.booking-panel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+.booking-panel strong {
+    display: block;
+    font-size: 1.0625rem;
+    margin-bottom: 6px;
+}
+
+.booking-panel p {
+    color: var(--text-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
 /* ===== Contact page ===== */
 .contact-grid {
     display: grid;

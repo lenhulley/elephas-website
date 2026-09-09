@@ -16,8 +16,9 @@ description: "Elephas Consultancy AB i Kosta, Småland bygger, integrerar och mo
     <div class="container hero-content">
         <h1 class="fade-in">Senior systemutveckling, förstärkt med AI</h1>
         <p class="hero-sub fade-in">Elephas Consultancy bygger, integrerar och moderniserar affärskritiska system för svenska företag. Varje rad kod granskas av en erfaren utvecklare — och levereras i den takt AI gör möjlig.</p>
+        {%- set bookingUrl = site.booking.sv or site.booking.en %}
         <div class="hero-actions fade-in">
-            <a href="/sv/kontakt/" class="btn btn-primary">Boka ett förutsättningslöst samtal</a>
+            <a href="{{ bookingUrl or '/sv/kontakt/' }}"{% if bookingUrl %} target="_blank" rel="noopener noreferrer"{% endif %} class="btn btn-primary">Boka ett förutsättningslöst samtal</a>
             <a href="/sv/tjanster/" class="btn btn-outline">Utforska våra tjänster</a>
         </div>
     </div>
