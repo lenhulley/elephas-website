@@ -1,13 +1,13 @@
 module.exports = {
   sv: {
     links: [
-      { label: "Tjänster", url: "/tjanster/" },
-      { label: "För byråer", url: "/for-byraer/" },
-      { label: "Samhällsnytta", url: "/samhallsnytta/" },
-      { label: "Så arbetar vi", url: "/sa-arbetar-vi/" },
-      { label: "Om oss", url: "/om/" }
+      { label: "Tjänster", url: "/sv/tjanster/" },
+      { label: "För byråer", url: "/sv/for-byraer/" },
+      { label: "Samhällsnytta", url: "/sv/samhallsnytta/" },
+      { label: "Så arbetar vi", url: "/sv/sa-arbetar-vi/" },
+      { label: "Om oss", url: "/sv/om/" }
     ],
-    contact: { label: "Kontakt", url: "/kontakt/" },
+    contact: { label: "Kontakt", url: "/sv/kontakt/" },
     cta: {
       title: "Berätta om ert projekt",
       sub: "Ett kostnadsfritt första samtal. Inga säljare — du pratar direkt med utvecklaren.",
@@ -17,19 +17,19 @@ module.exports = {
       tagline: "Mjukvaruutveckling och IT-konsulttjänster från Kosta, Småland.",
       servicesTitle: "Tjänster",
       services: [
-        { label: "Systemutveckling", url: "/tjanster/systemutveckling/" },
-        { label: "Design till kod", url: "/tjanster/design-till-kod/" },
-        { label: "Lösningsarkitektur & drift", url: "/tjanster/losningsarkitektur/" },
-        { label: "Power Platform & Dynamics 365", url: "/tjanster/power-platform/" },
-        { label: "Alla tjänster", url: "/tjanster/" }
+        { label: "Systemutveckling", url: "/sv/tjanster/systemutveckling/" },
+        { label: "Design till kod", url: "/sv/tjanster/design-till-kod/" },
+        { label: "Lösningsarkitektur & drift", url: "/sv/tjanster/losningsarkitektur/" },
+        { label: "Power Platform & Dynamics 365", url: "/sv/tjanster/power-platform/" },
+        { label: "Alla tjänster", url: "/sv/tjanster/" }
       ],
       companyTitle: "Företaget",
       company: [
-        { label: "Så arbetar vi", url: "/sa-arbetar-vi/" },
-        { label: "För byråer", url: "/for-byraer/" },
-        { label: "Samhällsnytta", url: "/samhallsnytta/" },
-        { label: "Om oss", url: "/om/" },
-        { label: "Kontakt", url: "/kontakt/" }
+        { label: "Så arbetar vi", url: "/sv/sa-arbetar-vi/" },
+        { label: "För byråer", url: "/sv/for-byraer/" },
+        { label: "Samhällsnytta", url: "/sv/samhallsnytta/" },
+        { label: "Om oss", url: "/sv/om/" },
+        { label: "Kontakt", url: "/sv/kontakt/" }
       ],
       contactTitle: "Kontakt",
       rights: "Alla rättigheter förbehållna."
@@ -38,13 +38,13 @@ module.exports = {
   },
   en: {
     links: [
-      { label: "Services", url: "/en/services/" },
-      { label: "For agencies", url: "/en/for-agencies/" },
-      { label: "Social impact", url: "/en/social-impact/" },
-      { label: "How we work", url: "/en/how-we-work/" },
-      { label: "About", url: "/en/about/" }
+      { label: "Services", url: "/services/" },
+      { label: "For agencies", url: "/for-agencies/" },
+      { label: "Social impact", url: "/social-impact/" },
+      { label: "How we work", url: "/how-we-work/" },
+      { label: "About", url: "/about/" }
     ],
-    contact: { label: "Contact", url: "/en/contact/" },
+    contact: { label: "Contact", url: "/contact/" },
     cta: {
       title: "Tell us about your project",
       sub: "A free first conversation. No salespeople — you talk directly to the developer.",
@@ -54,19 +54,19 @@ module.exports = {
       tagline: "Software development and IT consultancy from Kosta, Sweden.",
       servicesTitle: "Services",
       services: [
-        { label: "Custom software", url: "/en/services/custom-software/" },
-        { label: "Design to code", url: "/en/services/design-to-code/" },
-        { label: "Solution architecture & operations", url: "/en/services/solution-architecture/" },
-        { label: "Power Platform & Dynamics 365", url: "/en/services/power-platform/" },
-        { label: "All services", url: "/en/services/" }
+        { label: "Custom software", url: "/services/custom-software/" },
+        { label: "Design to code", url: "/services/design-to-code/" },
+        { label: "Solution architecture & operations", url: "/services/solution-architecture/" },
+        { label: "Power Platform & Dynamics 365", url: "/services/power-platform/" },
+        { label: "All services", url: "/services/" }
       ],
       companyTitle: "Company",
       company: [
-        { label: "How we work", url: "/en/how-we-work/" },
-        { label: "For agencies", url: "/en/for-agencies/" },
-        { label: "Social impact", url: "/en/social-impact/" },
-        { label: "About", url: "/en/about/" },
-        { label: "Contact", url: "/en/contact/" }
+        { label: "How we work", url: "/how-we-work/" },
+        { label: "For agencies", url: "/for-agencies/" },
+        { label: "Social impact", url: "/social-impact/" },
+        { label: "About", url: "/about/" },
+        { label: "Contact", url: "/contact/" }
       ],
       contactTitle: "Contact",
       rights: "All rights reserved."

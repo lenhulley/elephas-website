@@ -1,15 +1,16 @@
-// Route map pairing Swedish and English versions of every page.
+// Route map pairing English and Swedish versions of every page.
+// English is the default language and owns the unprefixed paths; Swedish lives under /sv/.
 // Used for canonical URLs, hreflang pairs, and the language switcher.
 module.exports = {
-  home: { sv: "/", en: "/en/" },
-  services: { sv: "/tjanster/", en: "/en/services/" },
-  customSoftware: { sv: "/tjanster/systemutveckling/", en: "/en/services/custom-software/" },
-  designToCode: { sv: "/tjanster/design-till-kod/", en: "/en/services/design-to-code/" },
-  architecture: { sv: "/tjanster/losningsarkitektur/", en: "/en/services/solution-architecture/" },
-  powerPlatform: { sv: "/tjanster/power-platform/", en: "/en/services/power-platform/" },
-  agencies: { sv: "/for-byraer/", en: "/en/for-agencies/" },
-  howWeWork: { sv: "/sa-arbetar-vi/", en: "/en/how-we-work/" },
-  socialImpact: { sv: "/samhallsnytta/", en: "/en/social-impact/" },
-  about: { sv: "/om/", en: "/en/about/" },
-  contact: { sv: "/kontakt/", en: "/en/contact/" }
+  home: { en: "/", sv: "/sv/" },
+  services: { en: "/services/", sv: "/sv/tjanster/" },
+  customSoftware: { en: "/services/custom-software/", sv: "/sv/tjanster/systemutveckling/" },
+  designToCode: { en: "/services/design-to-code/", sv: "/sv/tjanster/design-till-kod/" },
+  architecture: { en: "/services/solution-architecture/", sv: "/sv/tjanster/losningsarkitektur/" },
+  powerPlatform: { en: "/services/power-platform/", sv: "/sv/tjanster/power-platform/" },
+  agencies: { en: "/for-agencies/", sv: "/sv/for-byraer/" },
+  howWeWork: { en: "/how-we-work/", sv: "/sv/sa-arbetar-vi/" },
+  socialImpact: { en: "/social-impact/", sv: "/sv/samhallsnytta/" },
+  about: { en: "/about/", sv: "/sv/om/" },
+  contact: { en: "/contact/", sv: "/sv/kontakt/" }
 };
