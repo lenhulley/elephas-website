@@ -16,8 +16,9 @@ description: "Elephas Consultancy AB builds, integrates and modernises business-
     <div class="container hero-content">
         <h1 class="fade-in">Senior software development, amplified by AI</h1>
         <p class="hero-sub fade-in">Elephas Consultancy builds, integrates and modernises business-critical systems. Every line of code is reviewed by an experienced engineer — and delivered at the pace AI makes possible.</p>
+        {%- set bookingUrl = site.booking.en %}
         <div class="hero-actions fade-in">
-            <a href="/contact/" class="btn btn-primary">Book a no-obligation call</a>
+            <a href="{{ bookingUrl or '/contact/' }}"{% if bookingUrl %} target="_blank" rel="noopener noreferrer"{% endif %} class="btn btn-primary">Book a no-obligation call</a>
             <a href="/services/" class="btn btn-outline">Explore our services</a>
         </div>
     </div>

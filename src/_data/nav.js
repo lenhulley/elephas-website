@@ -34,6 +34,8 @@ module.exports = {
       contactTitle: "Kontakt",
       rights: "Alla rättigheter förbehållna."
     },
+    availability: "Tar emot nya uppdrag — bokningsbar alla vardagar 08–18.",
+    booking: { label: "Boka ett samtal", hint: "Välj en tid som passar dig — 30 minuter, utan förpliktelser." },
     langSwitch: { label: "EN", title: "Switch to English" }
   },
   en: {
@@ -71,6 +73,8 @@ module.exports = {
       contactTitle: "Contact",
       rights: "All rights reserved."
     },
+    availability: "Accepting new projects — bookable any working day, 08:00–18:00.",
+    booking: { label: "Book a call", hint: "Pick a time that suits you — 30 minutes, no obligation." },
     langSwitch: { label: "SV", title: "Byt till svenska" }
   }
 };
