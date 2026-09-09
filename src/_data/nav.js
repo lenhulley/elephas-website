@@ -51,7 +51,7 @@ module.exports = {
       button: "Get in touch"
     },
     footer: {
-      tagline: "Software development and IT consultancy from Kosta, Sweden.",
+      tagline: "Software development and IT consultancy from Kosta, Sweden — working remotely with clients across Europe.",
       servicesTitle: "Services",
       services: [
         { label: "Custom software", url: "/services/custom-software/" },

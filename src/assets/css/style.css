@@ -818,7 +818,8 @@ a.service-card:hover .card-more {
     color: var(--blue);
 }
 
-.fact-card .fact-sub {
+.fact-card .fact-sub,
+.contact-detail .fact-sub {
     font-size: 0.8125rem;
     font-weight: 400;
     color: var(--text-light);
