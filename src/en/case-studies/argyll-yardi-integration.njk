@@ -1,0 +1,84 @@
+---
+layout: base.njk
+lang: en
+routeKey: caseArgyll
+permalink: /case-studies/argyll-yardi-integration/
+title: "Argyll — integrating Yardi Kube and Dynamics 365 | Elephas Consultancy"
+description: ".NET 8 middleware on Azure keeping Yardi Kube and Dynamics 365 Sales in step for Argyll across 24 buildings and 5,500 active licences, with a reconciliation run that applied 1,321 corrections and no errors."
+heroEyebrow: "Case study"
+heroTitle: "Keeping Yardi Kube and Dynamics 365 in step for Argyll"
+heroSub: "Middleware that turns a closed deal into a live contract, and keeps 5,500 licences consistent across 24 buildings."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Client</dt><dd>Argyll</dd></div>
+            <div><dt>Sector</dt><dd>Flexible workspace · property</dd></div>
+            <div><dt>Engagement</dt><dd>Via JADe, now OpsTech</dd></div>
+            <div><dt>Period</dt><dd>2020 – present</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>The situation</h2>
+            <p>Argyll's sales team works in Dynamics 365. When Elephas first became involved in 2020, a Dynamics 365 Sales implementation was struggling, and it needed integrating with Dynamics NAV, ClickDimensions, TxtSync and RingCentral.</p>
+            <p>Argyll later moved its buildings, members and contracts from NAV to Yardi Kube. From then on, every deal closed in CRM had to become a company, members and a contract in Yardi — and every renewal, amendment and termination in Yardi had to flow back. If the two systems drift apart, occupancy and pipeline figures stop being trustworthy.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">What we did</h2>
+        <ul class="checklist">
+            <li class="fade-in">Delivered the Dynamics 365 Sales implementation and its four integrations</li>
+            <li class="fade-in">Designed and built .NET 8 middleware on Azure App Service between Dynamics 365 and Yardi Kube</li>
+            <li class="fade-in">Pushed deals closed in CRM to Yardi, with Yardi's changes flowing back through webhooks and Power Automate</li>
+            <li class="fade-in">Encoded the licence lifecycle, so renewals, amendments, future-dated terminations and repeated webhooks are all handled safely</li>
+            <li class="fade-in">Converted CRM's month-based price steps into Yardi tiered pricing, pro-rated for mid-month starts</li>
+            <li class="fade-in">Built reconciliation tooling that checks every building, runs as a dry run first and saves a rollback snapshot before writing anything</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">The outcome</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>24</strong><span>buildings kept in step</span></div>
+            <div class="stat"><strong>~5,500</strong><span>active licences</span></div>
+            <div class="stat"><strong>1,321</strong><span>corrections applied, with no errors</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>A single reconciliation run across all 24 buildings applied 1,321 corrections with no errors. Along the way, intermittent authentication failures were traced to up to 73 seconds of clock drift between the vendor's load-balanced servers — the kind of fault that looks random until someone measures it.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>Kept on when the contract changed hands</h3>
+            <p>When Argyll moved its technical services to OpsTech, OpsTech's first step was to subcontract the integration back to Elephas.</p>
+            <p><a href="/services/integration/">Read about systems integration →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Technology we used</h2>
+        <div class="chips fade-in">
+            <span class="chip">Dynamics 365 Sales</span>
+            <span class="chip">Dataverse SDK</span>
+            <span class="chip">.NET 8</span>
+            <span class="chip">Azure App Service</span>
+            <span class="chip">Yardi Kube API</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">xUnit</span>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+---
+layout: base.njk
+lang: en
+routeKey: caseLegacyAi
+permalink: /case-studies/legacy-modernisation-with-ai/
+title: "Two legacy systems rebuilt on .NET 10 with AI coding agents | Elephas Consultancy"
+description: "Legacy WebForms systems for Snak Appeal and Trend & Thomas rebuilt on .NET 10 with AI coding agents under close senior review — each live within a week of work starting."
+heroEyebrow: "Case study"
+heroTitle: "Two legacy systems rebuilt on .NET 10, each live within a week"
+heroSub: "AI coding agents under close senior review, applied to real systems for real businesses."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Clients</dt><dd>Snak Appeal · Trend &amp; Thomas</dd></div>
+            <div><dt>Sector</dt><dd>Small businesses</dd></div>
+            <div><dt>Role</dt><dd>Architect, developer and reviewer</dd></div>
+            <div><dt>Period</dt><dd>July 2026</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>The situation</h2>
+            <p>Both businesses had been clients of Infobox Media, the consultancy our founder co-founded, for more than a decade, and both depended on systems whose frameworks were long out of support.</p>
+            <p>Snak Appeal's franchise ordering system dated from 2015 and ran on .NET Framework WebForms. When its old server failed, franchisees could not place orders. Trend &amp; Thomas relied on a 2011 VB.NET application on .NET 3.5 for its job records, sales ledger and financial reporting.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">What we did</h2>
+        <ul class="checklist">
+            <li class="fade-in">Wrote the plan first: a page-by-page map from old to new, and a security checklist</li>
+            <li class="fade-in">Rebuilt like-for-like on .NET 10 and Razor Pages, with AI coding agents writing code under constant review</li>
+            <li class="fade-in">Mapped EF Core onto the existing databases, so no data migration was needed</li>
+            <li class="fade-in">Replaced home-grown sign-in with ASP.NET Core Identity — Snak Appeal's franchisees kept their existing passwords, now stored securely</li>
+            <li class="fade-in">Made order placement a single transaction, with stock checked and updated together</li>
+            <li class="fade-in">Fixed long-standing reporting defects — including filters that had never matched and a leap-year bug — rather than porting them</li>
+            <li class="fade-in">Added automated browser tests that must pass before every deployment</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">The outcome</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>6 days</strong><span>from plan to live — Snak Appeal</span></div>
+            <div class="stat"><strong>4 days</strong><span>from first build to live — Trend &amp; Thomas</span></div>
+            <div class="stat"><strong>61</strong><span>franchisees moved across</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>Snak Appeal went from plan to live for all 61 franchisees in six days. Trend &amp; Thomas's rebuild was live four days after work began. Both now run on a supported framework, with tests that make them safe to change.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>What AI changed, and what it didn't</h3>
+            <p>The agents wrote most of the code. Choosing the target architecture, writing the specification, reviewing every change and recognising when the output was wrong stayed with an experienced engineer — and that is what made the result safe to run.</p>
+            <p>What changed is the economics. Modernisation that a small business could never have justified is now affordable.</p>
+            <p><a href="/how-we-work/">Read how we work →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Technology we used</h2>
+        <div class="chips fade-in">
+            <span class="chip">.NET 10</span>
+            <span class="chip">Razor Pages</span>
+            <span class="chip">EF Core</span>
+            <span class="chip">ASP.NET Core Identity</span>
+            <span class="chip">QuestPDF</span>
+            <span class="chip">xUnit</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">Claude Code</span>
+        </div>
+    </div>
+</section>

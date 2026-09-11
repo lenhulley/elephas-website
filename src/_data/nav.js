@@ -2,7 +2,8 @@ module.exports = {
   sv: {
     links: [
       { label: "Tjänster", url: "/sv/tjanster/" },
-      { label: "För byråer", url: "/sv/for-byraer/" },
+      { label: "Kundcase", url: "/sv/kundcase/" },
+      { label: "För partner", url: "/sv/partner/" },
       { label: "Samhällsnytta", url: "/sv/samhallsnytta/" },
       { label: "Så arbetar vi", url: "/sv/sa-arbetar-vi/" },
       { label: "Om oss", url: "/sv/om/" }
@@ -14,22 +15,24 @@ module.exports = {
       button: "Kontakta oss"
     },
     footer: {
-      tagline: "Mjukvaruutveckling och IT-konsulttjänster från Kosta, Småland.",
+      tagline: "Mjukvaruutveckling och IT-konsulttjänster från Kosta, Småland — för kunder i Sverige, Storbritannien och resten av Europa.",
       servicesTitle: "Tjänster",
       services: [
-        { label: "Systemutveckling", url: "/sv/tjanster/systemutveckling/" },
-        { label: "Design till kod", url: "/sv/tjanster/design-till-kod/" },
-        { label: "Lösningsarkitektur & drift", url: "/sv/tjanster/losningsarkitektur/" },
-        { label: "Power Platform & Dynamics 365", url: "/sv/tjanster/power-platform/" },
+        { label: "Dynamics 365 & Power Platform", url: "/sv/tjanster/power-platform/" },
+        { label: "Systemintegration & API:er", url: "/sv/tjanster/integrationer/" },
+        { label: "Datamigrering & datakvalitet", url: "/sv/tjanster/datamigrering/" },
+        { label: "Modernisering av äldre system", url: "/sv/tjanster/modernisering/" },
         { label: "Alla tjänster", url: "/sv/tjanster/" }
       ],
       companyTitle: "Företaget",
       company: [
-        { label: "Så arbetar vi", url: "/sv/sa-arbetar-vi/" },
-        { label: "För byråer", url: "/sv/for-byraer/" },
+        { label: "Kundcase", url: "/sv/kundcase/" },
+        { label: "För partner", url: "/sv/partner/" },
+        { label: "Medlemsorganisationer", url: "/sv/branscher/medlemsorganisationer/" },
+        { label: "Besöksmål & kulturarv", url: "/sv/branscher/besoksmal-och-kulturarv/" },
         { label: "Samhällsnytta", url: "/sv/samhallsnytta/" },
-        { label: "Om oss", url: "/sv/om/" },
-        { label: "Kontakt", url: "/sv/kontakt/" }
+        { label: "Så arbetar vi", url: "/sv/sa-arbetar-vi/" },
+        { label: "Om oss", url: "/sv/om/" }
       ],
       contactTitle: "Kontakt",
       rights: "Alla rättigheter förbehållna."
@@ -41,7 +44,8 @@ module.exports = {
   en: {
     links: [
       { label: "Services", url: "/services/" },
-      { label: "For agencies", url: "/for-agencies/" },
+      { label: "Case studies", url: "/case-studies/" },
+      { label: "For partners", url: "/partners/" },
       { label: "Social impact", url: "/social-impact/" },
       { label: "How we work", url: "/how-we-work/" },
       { label: "About", url: "/about/" }
@@ -53,22 +57,24 @@ module.exports = {
       button: "Get in touch"
     },
     footer: {
-      tagline: "Software development and IT consultancy from Kosta, Sweden — working remotely with clients across Europe.",
+      tagline: "Software development and IT consultancy from Kosta, Sweden — working remotely with clients across the UK, Sweden and Europe.",
       servicesTitle: "Services",
       services: [
-        { label: "Custom software", url: "/services/custom-software/" },
-        { label: "Design to code", url: "/services/design-to-code/" },
-        { label: "Solution architecture & operations", url: "/services/solution-architecture/" },
-        { label: "Power Platform & Dynamics 365", url: "/services/power-platform/" },
+        { label: "Dynamics 365 & Power Platform", url: "/services/power-platform/" },
+        { label: "Systems integration & APIs", url: "/services/integration/" },
+        { label: "Data migration & quality", url: "/services/data-migration/" },
+        { label: "Legacy modernisation", url: "/services/legacy-modernisation/" },
         { label: "All services", url: "/services/" }
       ],
       companyTitle: "Company",
       company: [
-        { label: "How we work", url: "/how-we-work/" },
-        { label: "For agencies", url: "/for-agencies/" },
+        { label: "Case studies", url: "/case-studies/" },
+        { label: "For partners", url: "/partners/" },
+        { label: "Membership bodies & charities", url: "/sectors/membership-bodies-and-charities/" },
+        { label: "Visitor attractions & heritage", url: "/sectors/visitor-attractions-and-heritage/" },
         { label: "Social impact", url: "/social-impact/" },
-        { label: "About", url: "/about/" },
-        { label: "Contact", url: "/contact/" }
+        { label: "How we work", url: "/how-we-work/" },
+        { label: "About", url: "/about/" }
       ],
       contactTitle: "Contact",
       rights: "All rights reserved."

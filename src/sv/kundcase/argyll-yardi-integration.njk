@@ -1,0 +1,84 @@
+---
+layout: base.njk
+lang: sv
+routeKey: caseArgyll
+permalink: /sv/kundcase/argyll-yardi-integration/
+title: "Argyll — integration mellan Yardi Kube och Dynamics 365 | Elephas Consultancy"
+description: "Mellanprogramvara i .NET 8 på Azure som håller Yardi Kube och Dynamics 365 Sales samstämmiga för Argyll i 24 byggnader och 5 500 aktiva licenser, med en avstämning som genomförde 1 321 rättelser utan fel."
+heroEyebrow: "Kundcase"
+heroTitle: "Yardi Kube och Dynamics 365 i takt för Argyll"
+heroSub: "Integration som gör en vunnen affär till ett aktivt avtal, och håller 5 500 licenser samstämmiga i 24 byggnader."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Kund</dt><dd>Argyll</dd></div>
+            <div><dt>Bransch</dt><dd>Flexibla kontor · fastigheter</dd></div>
+            <div><dt>Uppdragsform</dt><dd>Via JADe, i dag OpsTech</dd></div>
+            <div><dt>Period</dt><dd>2020 – i dag</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>Utgångsläget</h2>
+            <p>Argylls säljteam arbetar i Dynamics 365. När Elephas kom in 2020 gick ett Dynamics 365 Sales-införande trögt, och det behövde integreras med Dynamics NAV, ClickDimensions, TxtSync och RingCentral.</p>
+            <p>Senare flyttade Argyll sina byggnader, medlemmar och avtal från NAV till Yardi Kube. Från och med då behövde varje affär som stängdes i CRM bli ett företag, medlemmar och ett avtal i Yardi — och varje förlängning, ändring och uppsägning i Yardi behövde flöda tillbaka. Glider systemen isär går det inte längre att lita på beläggnings- och pipelinesiffrorna.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">Det här gjorde vi</h2>
+        <ul class="checklist">
+            <li class="fade-in">Levererade Dynamics 365 Sales-införandet och dess fyra integrationer</li>
+            <li class="fade-in">Designade och byggde mellanprogramvara i .NET 8 på Azure App Service mellan Dynamics 365 och Yardi Kube</li>
+            <li class="fade-in">Förde över vunna affärer från CRM till Yardi, med ändringar från Yardi tillbaka via webhooks och Power Automate</li>
+            <li class="fade-in">Byggde in licensernas livscykel, så att förlängningar, ändringar, framtida uppsägningar och upprepade webhooks hanteras säkert</li>
+            <li class="fade-in">Översatte CRM:s månadsbaserade prissteg till Yardis trappade prissättning, proportionerad för starter mitt i månaden</li>
+            <li class="fade-in">Byggde avstämningsverktyg som kontrollerar varje byggnad, körs som torrkörning först och sparar en återställningskopia innan något skrivs</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Resultatet</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>24</strong><span>byggnader i takt</span></div>
+            <div class="stat"><strong>~5 500</strong><span>aktiva licenser</span></div>
+            <div class="stat"><strong>1 321</strong><span>rättelser, utan fel</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>En enda avstämning över alla 24 byggnader genomförde 1 321 rättelser utan fel. På vägen spårades sporadiska autentiseringsfel till upp till 73 sekunders klockavvikelse mellan leverantörens lastbalanserade servrar — den sortens fel som ser slumpmässiga ut tills någon mäter dem.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>Kvar när avtalet bytte händer</h3>
+            <p>När Argyll flyttade sina tekniska tjänster till OpsTech var OpsTechs första åtgärd att lägga tillbaka integrationen hos Elephas som underkonsult.</p>
+            <p><a href="/sv/tjanster/integrationer/">Läs om systemintegration →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Teknik vi använde</h2>
+        <div class="chips fade-in">
+            <span class="chip">Dynamics 365 Sales</span>
+            <span class="chip">Dataverse SDK</span>
+            <span class="chip">.NET 8</span>
+            <span class="chip">Azure App Service</span>
+            <span class="chip">Yardi Kube API</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">xUnit</span>
+        </div>
+    </div>
+</section>

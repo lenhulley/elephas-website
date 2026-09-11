@@ -3,8 +3,8 @@ layout: base.njk
 lang: sv
 routeKey: home
 permalink: /sv/
-title: "Elephas Consultancy — Senior systemutveckling, förstärkt med AI"
-description: "Elephas Consultancy AB i Kosta, Småland bygger, integrerar och moderniserar affärskritiska system för svenska företag. Senior expertis i varje rad kod — levererad i den takt AI gör möjlig."
+title: "Elephas Consultancy — utveckling för Dynamics 365, Dataverse och .NET"
+description: "Senior utveckling för Dynamics 365, Dataverse och .NET åt Microsoftpartner, byråer och deras kunder: plugins, integrationer, datamigrering, portaler och modernisering av äldre system."
 ---
 <header class="hero">
     <div class="hero-shapes" aria-hidden="true">
@@ -14,37 +14,97 @@ description: "Elephas Consultancy AB i Kosta, Småland bygger, integrerar och mo
         <div class="shape shape-4"></div>
     </div>
     <div class="container hero-content">
-        <h1 class="fade-in">Senior systemutveckling, förstärkt med AI</h1>
-        <p class="hero-sub fade-in">Elephas Consultancy bygger, integrerar och moderniserar affärskritiska system för svenska företag. Varje rad kod granskas av en erfaren utvecklare — och levereras i den takt AI gör möjlig.</p>
+        <h1 class="fade-in">Dynamics 365- och .NET-utveckling, av den som skriver koden</h1>
+        <p class="hero-sub fade-in">Mer än 20 år av att bygga och integrera affärssystem, och Dynamics sedan 2013. Plugins, integrationer, datamigrering, portaler och .NET-applikationerna runt Dataverse — för Microsoftpartner, byråer och de organisationer de arbetar för.</p>
         {%- set bookingUrl = site.booking.sv or site.booking.en %}
         <div class="hero-actions fade-in">
             <a href="{{ bookingUrl or '/sv/kontakt/' }}"{% if bookingUrl %} target="_blank" rel="noopener noreferrer"{% endif %} class="btn btn-primary">Boka ett förutsättningslöst samtal</a>
-            <a href="/sv/tjanster/" class="btn btn-outline">Utforska våra tjänster</a>
+            <a href="/sv/kundcase/" class="btn btn-outline">Se kundcase</a>
         </div>
     </div>
 </header>
 
 <section class="section section-alt">
     <div class="container">
-        <h2 class="fade-in">Vad för er hit?</h2>
-        <p class="section-sub fade-in">Vi arbetar med tre sorters uppdragsgivare. Välj er väg — innehållet är skrivet för just er.</p>
+        <h2 class="fade-in">Vilka vi arbetar med</h2>
+        <p class="section-sub fade-in">Det mesta av vårt arbete kommer via partner. Resten kommer från två branscher där vi har mer än tio års erfarenhet.</p>
         <div class="cards-grid">
-            <a href="/sv/tjanster/" class="door-card fade-in">
-                <h3>Företag med ett tekniskt behov</h3>
-                <p>Ni vet vad verksamheten behöver men saknar ett eget utvecklingsteam. Vi tar helhetsansvar — från kravbild till driftsatt lösning med övervakning.</p>
-                <span class="card-more">Se våra tjänster →</span>
-            </a>
-            <a href="/sv/for-byraer/" class="door-card fade-in">
-                <h3>Byråer &amp; designers</h3>
-                <p>Ni har designen och kunden — men behöver utvecklingskapacitet. Vi bygger er design pixel-perfekt, under ert varumärke.</p>
+            <a href="/sv/partner/" class="door-card fade-in">
+                <h3>Microsoftpartner &amp; byråer</h3>
+                <p>Senior kapacitet när ett projekt kräver mer än konfiguration: plugins, integrationer, migreringar och portaler, skrivna i C#. Under ert varumärke eller tillsammans med ert team.</p>
                 <span class="card-more">Så samarbetar vi →</span>
             </a>
-            <a href="/sv/samhallsnytta/" class="door-card fade-in">
-                <h3>Projekt med samhällsnytta</h3>
-                <p>Ni driver ett projekt med finansiering — eller söker medel — och behöver en teknikpartner som kan avgränsa, budgetera och leverera.</p>
-                <span class="card-more">Läs om samhällsnytta →</span>
+            <a href="/sv/branscher/medlemsorganisationer/" class="door-card fade-in">
+                <h3>Medlemsorganisationer &amp; ideell sektor</h3>
+                <p>Yrkesorganisationer, välgörenhetsorganisationer och medlemsorganisationer på Dynamics — från Chartered Society of Physiotherapy och Institution of Fire Engineers till Age UK och Prison Reform Trust.</p>
+                <span class="card-more">Vårt arbete i branschen →</span>
+            </a>
+            <a href="/sv/branscher/besoksmal-och-kulturarv/" class="door-card fade-in">
+                <h3>Besöksmål &amp; kulturarv</h3>
+                <p>Biljettsystem, CRM, medlemskap och betalningar för besöksmål som Royal Botanic Gardens Kew, Royal Museums Greenwich, Ashmolean och Ironbridge.</p>
+                <span class="card-more">Vårt arbete i branschen →</span>
             </a>
         </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">Inkallad när det gäller</h2>
+        <p class="section-sub fade-in">Fyra gånger har ett Dynamics-införande varit i svårigheter och vår grundare tagits in för att rätta till det.</p>
+        <div class="cards-grid cards-grid-2">
+            <a href="/sv/kundcase/royal-botanic-gardens-kew/" class="service-card fade-in">
+                <p class="card-tag">Besöksmål</p>
+                <h3>Royal Botanic Gardens, Kew</h3>
+                <p>Två leverantörer hade vunnit en gemensam upphandling av integrerat biljettsystem och CRM, och CRM-delen hade inte ens påbörjats. Projektledaren på kundsidan designade integrationslagret och byggde halva det själv.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+            <a href="/sv/kundcase/national-highways/" class="service-card fade-in">
+                <p class="card-tag">Offentlig sektor</p>
+                <h3>National Highways</h3>
+                <p>En ambitiös datamigrering till Dynamics 365 gick dåligt. Den slutfördes med SSIS och KingswaySoft, och arbetet fortsatte i fyra år i flera vägprojekt.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+            <a href="/sv/kundcase/argyll-yardi-integration/" class="service-card fade-in">
+                <p class="card-tag">Flexibla kontor</p>
+                <h3>Argyll</h3>
+                <p>Tog över ett Dynamics 365 Sales-införande som gick trögt, och byggde sedan integrationen mot Yardi Kube som i dag håller 5 500 licenser samstämmiga i 24 byggnader.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+            <div class="service-card fade-in">
+                <p class="card-tag">Medlemsorganisation</p>
+                <h3>Chartered Society of Physiotherapy</h3>
+                <p>Teknisk ansvarig på kundsidan i ett Dynamics CRM-införande: integration med det befintliga medlemssystemet och den publika webbplatsen, och tydlig kravställning mot leverantören.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Senaste uppdragen</h2>
+        <p class="section-sub fade-in">Namngivna kunder, verkliga begränsningar och vad som faktiskt hände.</p>
+        <div class="cards-grid">
+            <a href="/sv/kundcase/scg-kundportal/" class="service-card fade-in">
+                <p class="card-tag">Telekom · 2026</p>
+                <h3>En Dataverse-portal på Umbraco som ersätter Power Pages</h3>
+                <p>En självbetjäningsportal för omkring 14 000 företagskunder hos Southern Communications Group, ombyggd så att den kan testas och ändras säkert.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+            <a href="/sv/kundcase/autogiro-for-besoksmal/" class="service-card fade-in">
+                <p class="card-tag">Kulturarv · 2022–2025</p>
+                <h3>Brittisk Direct Debit på en amerikansk biljettplattform</h3>
+                <p>Medlemskap och delbetalningar via Direct Debit, i drift hos Royal Museums Greenwich, Ashmolean och Ironbridge Gorge Museum Trust.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+            <a href="/sv/kundcase/modernisering-med-ai/" class="service-card fade-in">
+                <p class="card-tag">Modernisering · 2026</p>
+                <h3>Två äldre system ombyggda på .NET 10</h3>
+                <p>WebForms-applikationer från 2011 och 2015, ombyggda med AI-kodagenter under noggrann granskning och i drift inom en vecka.</p>
+                <span class="card-more">Läs kundcaset →</span>
+            </a>
+        </div>
+        <p class="fade-in" style="margin-top: 28px;"><a href="/sv/kundcase/" class="card-more">Alla kundcase →</a></p>
     </div>
 </section>
 
@@ -54,18 +114,18 @@ description: "Elephas Consultancy AB i Kosta, Småland bygger, integrerar och mo
         <p class="section-sub fade-in">Ett litet bolag med stora verktyg — och en ovanligt rak arbetsmodell.</p>
         <div class="cards-grid">
             <div class="service-card fade-in">
+                <h3>Utveckling, inte bara konfiguration</h3>
+                <p>När plattformen inte räcker skriver vi koden: plugins, egna API:er, Azure Functions, SSIS-paket och portaler. Och när Dynamics inte är rätt verktyg säger vi det.</p>
+                <a href="/sv/tjanster/power-platform/" class="card-more">Dynamics 365 &amp; Power Platform →</a>
+            </div>
+            <div class="service-card fade-in">
                 <h3>Senior i varje rad</h3>
                 <p>Inga juniorer, inga mellanhänder. Den som skriver och granskar koden har lång erfarenhet av affärskritiska system i både Storbritannien och Sverige — och det är samma person du pratar med.</p>
             </div>
             <div class="service-card fade-in">
-                <h3>AI i varje steg</h3>
-                <p>Vi använder AI-agenter i specifikation, utveckling, test och granskning. Det ger ett teams tempo med en seniors omdöme — och det syns i både leveranstid och pris.</p>
+                <h3>AI under noggrann granskning</h3>
+                <p>AI-kodagenter skriver mycket av koden. Specifikationen, arkitekturen och granskningen ligger kvar hos en erfaren utvecklare — så gick två äldre system från plan till drift på under en vecka vardera.</p>
                 <a href="/sv/sa-arbetar-vi/" class="card-more">Läs hur vi arbetar →</a>
-            </div>
-            <div class="service-card fade-in">
-                <h3>Helhetsansvar</h3>
-                <p>Arkitektur, utveckling, driftsättning och övervakning. Vi lämnar inte över en zip-fil — vi ser till att lösningen fungerar, och fortsätter fungera.</p>
-                <a href="/sv/tjanster/losningsarkitektur/" class="card-more">Arkitektur &amp; drift →</a>
             </div>
         </div>
     </div>
@@ -76,16 +136,16 @@ description: "Elephas Consultancy AB i Kosta, Småland bygger, integrerar och mo
         <h2 class="fade-in">Teknik vi arbetar med varje dag</h2>
         <p class="section-sub fade-in">Djup kompetens inom Microsoft-stacken — och moderna AI-verktyg som en naturlig del av arbetet.</p>
         <div class="chips fade-in">
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Dataverse</span>
             <span class="chip">.NET &amp; C#</span>
-            <span class="chip">Blazor</span>
             <span class="chip">ASP.NET Core</span>
             <span class="chip">Azure</span>
-            <span class="chip">Power Platform</span>
-            <span class="chip">Dynamics 365</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">Business Central</span>
+            <span class="chip">SSIS &amp; KingswaySoft</span>
             <span class="chip">Umbraco CMS</span>
             <span class="chip">SQL Server</span>
-            <span class="chip">EF Core</span>
-            <span class="chip">GitHub Actions</span>
             <span class="chip">Playwright</span>
             <span class="chip">Claude &amp; AI-agenter</span>
         </div>

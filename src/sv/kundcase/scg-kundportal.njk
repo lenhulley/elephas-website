@@ -1,0 +1,89 @@
+---
+layout: base.njk
+lang: sv
+routeKey: caseScgPortal
+permalink: /sv/kundcase/scg-kundportal/
+title: "Southern Communications Group — en kundportal för Dataverse på Umbraco | Elephas Consultancy"
+description: "En Power Pages-portal för omkring 14 000 företagskunder ersatt med en portal i .NET 10 och Umbraco 17 ovanpå Dataverse: en konfigurerbar tabell- och formulärmotor, krypterade frågor och 575 enhetstester."
+heroEyebrow: "Kundcase"
+heroTitle: "Power Pages ersatt med en Dataverse-portal byggd på Umbraco"
+heroSub: "En självbetjäningsportal för omkring 14 000 företagskunder, ombyggd så att den kan testas och ändras säkert."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Kund</dt><dd>Southern Communications Group</dd></div>
+            <div><dt>Bransch</dt><dd>Telekom för företag</dd></div>
+            <div><dt>Roll</dt><dd>Arkitekt och utvecklare</dd></div>
+            <div><dt>Period</dt><dd>2026 · pågående</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>Utgångsläget</h2>
+            <p>Southern Communications Groups företagskunder hanterar sina telefonlinjer, mobiler och bredband via en självbetjäningsportal: förbrukningsaviseringar, beställningar, fakturor, behörigheter för den egna personalen och serviceärenden som att säga upp en linje eller byta SIM-kort.</p>
+            <p>Portalen var byggd på Microsoft Power Pages ovanpå SCG:s Dynamics 365-plattform. Den hade vuxit till 260 webbsidor, 37 formulär och 69 listor, med egen JavaScript på 23 sidor, och omkring 14 000 personer loggar in i den på fler än 12 000 kundkonton.</p>
+            <p>Elephas har arbetat med SCG sedan 2018 — först med 2 Circles, innan bolaget blev en del av koncernen — bland annat med de offert- och orderappar som säljteamen använder tillsammans med Dynamics 365.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">Det här gjorde vi</h2>
+        <ul class="checklist">
+            <li class="fade-in">Behöll Dynamics 365 som källsystem: portalen lagrar inga egna kunddata</li>
+            <li class="fade-in">Byggde en konfigurerbar tabell- och formulärmotor, så att sidor, formulär och Dataverse-frågor sätts upp i CMS:et i stället för att hårdkodas</li>
+            <li class="fade-in">Krypterade fråge- och formulärdefinitioner på servern, så att webbläsaren inte kan ändra vilka poster som läses eller skrivs</li>
+            <li class="fade-in">Skrev verktyg som läser den befintliga Power Pages-konfigurationen direkt ur Dataverse och jämför den med den nya portalen, så att likvärdigheten kontrolleras i stället för att antas</li>
+            <li class="fade-in">Täckte portalen med 575 enhetstester och webbläsartester i Playwright</li>
+            <li class="fade-in">Planerade en driftsättning där återgång bara är en DNS-ändring, eftersom båda portalerna delar samma Dataverse</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Resultatet</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>~14 000</strong><span>kundinloggningar</span></div>
+            <div class="stat"><strong>87</strong><span>sidor konfigurerade i CMS:et</span></div>
+            <div class="stat"><strong>154</strong><span>Dataverse-frågor</span></div>
+            <div class="stat"><strong>575</strong><span>enhetstester</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>Den nya portalen är funktionellt klar och förbereds för driftsättning. Den har tagits fram med AI-kodagenter under noggrann granskning, och testsviten kontrollerar även att projektdokumentationen fortfarande stämmer med koden.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>När en portal växer ur Power Pages</h3>
+            <p>Power Pages är ett rimligt val för en enkel portal. När en portal bär så här mycket eget beteende är en vanlig .NET-applikation ovanpå samma Dataverse-data lättare att testa, versionshantera och ändra med trygghet.</p>
+            <p>Dynamics ligger kvar precis där det är. Det är bara gränssnittet som byts.</p>
+            <p><a href="/sv/tjanster/power-platform/">Läs om Dynamics 365 &amp; Power Platform →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Teknik vi använde</h2>
+        <div class="chips fade-in">
+            <span class="chip">.NET 10</span>
+            <span class="chip">Umbraco 17</span>
+            <span class="chip">Dataverse SDK</span>
+            <span class="chip">FetchXML</span>
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Power BI Embedded</span>
+            <span class="chip">xUnit</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">Claude &amp; AI-agenter</span>
+        </div>
+    </div>
+</section>
