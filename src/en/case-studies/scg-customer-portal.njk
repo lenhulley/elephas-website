@@ -1,0 +1,89 @@
+---
+layout: base.njk
+lang: en
+routeKey: caseScgPortal
+permalink: /case-studies/scg-customer-portal/
+title: "Southern Communications Group — a Dataverse customer portal on Umbraco | Elephas Consultancy"
+description: "Replacing a Microsoft Power Pages portal for around 14,000 business customers with a .NET 10 and Umbraco 17 portal over Dataverse: a configurable grid and form engine, encrypted queries and 575 unit tests."
+heroEyebrow: "Case study"
+heroTitle: "Replacing Power Pages with a Dataverse portal built on Umbraco"
+heroSub: "A self-service portal for around 14,000 business customers, rebuilt so it can be tested and changed safely."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Client</dt><dd>Southern Communications Group</dd></div>
+            <div><dt>Sector</dt><dd>Business telecoms</dd></div>
+            <div><dt>Role</dt><dd>Architect and developer</dd></div>
+            <div><dt>Period</dt><dd>2026 · in delivery</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>The situation</h2>
+            <p>Southern Communications Group's business customers manage their phone lines, mobiles and broadband through a self-service portal: usage alerts, orders, invoices, access for their own staff, and service requests such as ceasing a line or swapping a SIM.</p>
+            <p>The portal had been built on Microsoft Power Pages over SCG's Dynamics 365 platform. It had grown to 260 web pages, 37 forms and 69 lists, with custom JavaScript on 23 pages, and around 14,000 people sign in to it across more than 12,000 customer accounts.</p>
+            <p>Elephas has worked with SCG since 2018 — first with 2 Circles, before it became part of the group — including the quote-to-order apps its sales teams use alongside Dynamics 365.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">What we did</h2>
+        <ul class="checklist">
+            <li class="fade-in">Kept Dynamics 365 as the system of record: the portal stores no customer data of its own</li>
+            <li class="fade-in">Built a configurable grid and form engine, so pages, forms and Dataverse queries are set up in the CMS rather than hard-coded</li>
+            <li class="fade-in">Encrypted query and form definitions on the server, so the browser cannot change which records are read or written</li>
+            <li class="fade-in">Wrote tooling that reads the live Power Pages configuration from Dataverse and compares it with the new portal, so parity is checked rather than assumed</li>
+            <li class="fade-in">Covered the portal with 575 unit tests and Playwright browser tests</li>
+            <li class="fade-in">Planned a cutover where rollback is a DNS change, because both portals share the same Dataverse</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">The outcome</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>~14,000</strong><span>customer logins</span></div>
+            <div class="stat"><strong>87</strong><span>pages configured in the CMS</span></div>
+            <div class="stat"><strong>154</strong><span>Dataverse queries</span></div>
+            <div class="stat"><strong>575</strong><span>unit tests</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>The new portal is functionally complete and preparing for go-live. It was delivered with AI coding agents under close review, and the test suite also checks that the project documentation still matches the code.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>When a portal outgrows Power Pages</h3>
+            <p>Power Pages is a sensible choice for a straightforward portal. Once a portal carries this much custom behaviour, a conventional .NET application over the same Dataverse data is easier to test, version and change with confidence.</p>
+            <p>Dynamics stays exactly where it is. Only the front end changes.</p>
+            <p><a href="/services/power-platform/">Read about Dynamics 365 &amp; Power Platform →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Technology we used</h2>
+        <div class="chips fade-in">
+            <span class="chip">.NET 10</span>
+            <span class="chip">Umbraco 17</span>
+            <span class="chip">Dataverse SDK</span>
+            <span class="chip">FetchXML</span>
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Power BI Embedded</span>
+            <span class="chip">xUnit</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">Claude &amp; AI agents</span>
+        </div>
+    </div>
+</section>

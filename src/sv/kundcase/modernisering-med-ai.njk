@@ -1,0 +1,87 @@
+---
+layout: base.njk
+lang: sv
+routeKey: caseLegacyAi
+permalink: /sv/kundcase/modernisering-med-ai/
+title: "Två äldre system ombyggda på .NET 10 med AI-kodagenter | Elephas Consultancy"
+description: "Äldre WebForms-system för Snak Appeal och Trend & Thomas ombyggda på .NET 10 med AI-kodagenter under noggrann senior granskning — i drift inom en vecka från start."
+heroEyebrow: "Kundcase"
+heroTitle: "Två äldre system ombyggda på .NET 10, i drift inom en vecka"
+heroSub: "AI-kodagenter under noggrann senior granskning, i verkliga system för verkliga företag."
+---
+<section class="section">
+    <div class="container">
+        <dl class="glance fade-in">
+            <div><dt>Kunder</dt><dd>Snak Appeal · Trend &amp; Thomas</dd></div>
+            <div><dt>Bransch</dt><dd>Småföretag</dd></div>
+            <div><dt>Roll</dt><dd>Arkitekt, utvecklare och granskare</dd></div>
+            <div><dt>Period</dt><dd>Juli 2026</dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="prose fade-in">
+            <h2>Utgångsläget</h2>
+            <p>Båda företagen hade i mer än tio år varit kunder hos Infobox Media, konsultbolaget vår grundare var med och startade, och båda var beroende av system vars ramverk sedan länge saknade support.</p>
+            <p>Snak Appeals ordersystem för franchisetagare var från 2015 och byggt på .NET Framework WebForms. När den gamla servern gick sönder kunde franchisetagarna inte lägga beställningar. Trend &amp; Thomas använde en VB.NET-applikation från 2011 på .NET 3.5 för uppdragsregister, kundreskontra och ekonomisk rapportering.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">Det här gjorde vi</h2>
+        <ul class="checklist">
+            <li class="fade-in">Skrev planen först: en sida-för-sida-karta från gammalt till nytt, och en checklista för säkerhet</li>
+            <li class="fade-in">Byggde om funktion för funktion på .NET 10 och Razor Pages, med AI-kodagenter som skrev kod under ständig granskning</li>
+            <li class="fade-in">Mappade EF Core mot de befintliga databaserna, så att ingen datamigrering behövdes</li>
+            <li class="fade-in">Ersatte hemmabyggd inloggning med ASP.NET Core Identity — Snak Appeals franchisetagare behöll sina lösenord, som nu lagras säkert</li>
+            <li class="fade-in">Gjorde orderläggningen till en enda transaktion, där lagersaldot kontrolleras och uppdateras tillsammans</li>
+            <li class="fade-in">Rättade gamla fel i rapporterna — bland annat filter som aldrig gett träff och ett skottårsfel — i stället för att föra dem vidare</li>
+            <li class="fade-in">Lade till automatiska webbläsartester som måste passera före varje driftsättning</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Resultatet</h2>
+        <div class="stats fade-in">
+            <div class="stat"><strong>6 dagar</strong><span>från plan till drift — Snak Appeal</span></div>
+            <div class="stat"><strong>4 dagar</strong><span>från första bygget till drift — Trend &amp; Thomas</span></div>
+            <div class="stat"><strong>61</strong><span>franchisetagare flyttade</span></div>
+        </div>
+        <div class="prose fade-in">
+            <p>Snak Appeal gick från plan till drift för alla 61 franchisetagare på sex dagar. Trend &amp; Thomas ombyggda system var i drift fyra dagar efter att arbetet började. Båda körs nu på ett ramverk med support, med tester som gör dem säkra att ändra.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="callout fade-in">
+            <h3>Vad AI förändrade, och vad det inte förändrade</h3>
+            <p>Agenterna skrev det mesta av koden. Att välja målarkitektur, skriva specifikationen, granska varje ändring och känna igen när resultatet var fel låg kvar hos en erfaren utvecklare — och det var det som gjorde resultatet säkert att köra.</p>
+            <p>Det som förändrades är ekonomin. Modernisering som ett litet företag aldrig hade kunnat motivera är nu överkomlig.</p>
+            <p><a href="/sv/sa-arbetar-vi/">Läs hur vi arbetar →</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Teknik vi använde</h2>
+        <div class="chips fade-in">
+            <span class="chip">.NET 10</span>
+            <span class="chip">Razor Pages</span>
+            <span class="chip">EF Core</span>
+            <span class="chip">ASP.NET Core Identity</span>
+            <span class="chip">QuestPDF</span>
+            <span class="chip">xUnit</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">Claude Code</span>
+        </div>
+    </div>
+</section>

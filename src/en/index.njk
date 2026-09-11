@@ -3,8 +3,8 @@ layout: base.njk
 lang: en
 routeKey: home
 permalink: /
-title: "Elephas Consultancy — Senior software development, amplified by AI"
-description: "Elephas Consultancy AB builds, integrates and modernises business-critical systems for clients across Sweden, the UK and Europe. Senior expertise in every line of code — delivered at the pace AI makes possible."
+title: "Elephas Consultancy — Dynamics 365, Dataverse and .NET engineering"
+description: "Senior Dynamics 365, Dataverse and .NET engineering for Microsoft partners, agencies and the organisations they serve: plugins, integrations, data migration, portals and legacy modernisation."
 ---
 <header class="hero">
     <div class="hero-shapes" aria-hidden="true">
@@ -14,37 +14,97 @@ description: "Elephas Consultancy AB builds, integrates and modernises business-
         <div class="shape shape-4"></div>
     </div>
     <div class="container hero-content">
-        <h1 class="fade-in">Senior software development, amplified by AI</h1>
-        <p class="hero-sub fade-in">Elephas Consultancy builds, integrates and modernises business-critical systems. Every line of code is reviewed by an experienced engineer — and delivered at the pace AI makes possible.</p>
+        <h1 class="fade-in">Dynamics 365 and .NET engineering, from the person who writes the code</h1>
+        <p class="hero-sub fade-in">More than 20 years building and integrating business systems, and Dynamics since 2013. Plugins, integrations, data migration, portals and the .NET applications around Dataverse — for Microsoft partners, agencies and the organisations they serve.</p>
         {%- set bookingUrl = site.booking.en %}
         <div class="hero-actions fade-in">
             <a href="{{ bookingUrl or '/contact/' }}"{% if bookingUrl %} target="_blank" rel="noopener noreferrer"{% endif %} class="btn btn-primary">Book a no-obligation call</a>
-            <a href="/services/" class="btn btn-outline">Explore our services</a>
+            <a href="/case-studies/" class="btn btn-outline">See case studies</a>
         </div>
     </div>
 </header>
 
 <section class="section section-alt">
     <div class="container">
-        <h2 class="fade-in">What brings you here?</h2>
-        <p class="section-sub fade-in">We work with three kinds of clients. Pick your path — the content is written for you.</p>
+        <h2 class="fade-in">Who we work with</h2>
+        <p class="section-sub fade-in">Most of our work arrives through partners. The rest comes from two sectors we have spent more than a decade in.</p>
         <div class="cards-grid">
-            <a href="/services/" class="door-card fade-in">
-                <h3>A business with a technology need</h3>
-                <p>You know what the business needs but have no development team of your own. We take end-to-end responsibility — from requirements to a running solution with monitoring.</p>
-                <span class="card-more">See our services →</span>
-            </a>
-            <a href="/for-agencies/" class="door-card fade-in">
-                <h3>Agencies &amp; designers</h3>
-                <p>You have the design and the client — but need development capacity. We build your design pixel-perfect, under your brand.</p>
+            <a href="/partners/" class="door-card fade-in">
+                <h3>Microsoft partners &amp; agencies</h3>
+                <p>Senior capacity for when a project needs more than configuration: plugins, integrations, migrations and portals, written in C#. White-label, or alongside your own team.</p>
                 <span class="card-more">How we partner →</span>
             </a>
-            <a href="/social-impact/" class="door-card fade-in">
-                <h3>Projects with social impact</h3>
-                <p>You run a funded project — or are applying for funding — and need a technology partner who can scope, budget and deliver.</p>
-                <span class="card-more">Read about social impact →</span>
+            <a href="/sectors/membership-bodies-and-charities/" class="door-card fade-in">
+                <h3>Membership bodies &amp; charities</h3>
+                <p>Professional institutes, charities and membership organisations on Dynamics — from the Chartered Society of Physiotherapy and the Institution of Fire Engineers to Age UK and Prison Reform Trust.</p>
+                <span class="card-more">Our work in the sector →</span>
+            </a>
+            <a href="/sectors/visitor-attractions-and-heritage/" class="door-card fade-in">
+                <h3>Visitor attractions &amp; heritage</h3>
+                <p>Ticketing, CRM, memberships and payments for attractions including Royal Botanic Gardens Kew, Royal Museums Greenwich, the Ashmolean and Ironbridge.</p>
+                <span class="card-more">Our work in the sector →</span>
             </a>
         </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="fade-in">Brought in when it matters</h2>
+        <p class="section-sub fade-in">Four times, a Dynamics implementation was in difficulty and our founder was brought in to put it right.</p>
+        <div class="cards-grid cards-grid-2">
+            <a href="/case-studies/royal-botanic-gardens-kew/" class="service-card fade-in">
+                <p class="card-tag">Visitor attraction</p>
+                <h3>Royal Botanic Gardens, Kew</h3>
+                <p>Two suppliers had won a joint tender for integrated ticketing and CRM, and the CRM hadn't started. The client-side project manager designed the integration layer and built half of it himself.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+            <a href="/case-studies/national-highways/" class="service-card fade-in">
+                <p class="card-tag">Public sector</p>
+                <h3>National Highways</h3>
+                <p>An ambitious Dynamics 365 data migration was going badly. It was completed with SSIS and KingswaySoft, and the work continued for four years across road schemes.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+            <a href="/case-studies/argyll-yardi-integration/" class="service-card fade-in">
+                <p class="card-tag">Flexible workspace</p>
+                <h3>Argyll</h3>
+                <p>Took over a struggling Dynamics 365 Sales implementation, then built the Yardi Kube integration that now keeps 5,500 licences consistent across 24 buildings.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+            <div class="service-card fade-in">
+                <p class="card-tag">Membership body</p>
+                <h3>Chartered Society of Physiotherapy</h3>
+                <p>Client-side technical lead on a Dynamics CRM implementation: integration with the existing membership system and public website, and holding the supplier to account.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Recent work</h2>
+        <p class="section-sub fade-in">Named clients, real constraints, and what actually happened.</p>
+        <div class="cards-grid">
+            <a href="/case-studies/scg-customer-portal/" class="service-card fade-in">
+                <p class="card-tag">Telecoms · 2026</p>
+                <h3>A Dataverse portal on Umbraco, replacing Power Pages</h3>
+                <p>A self-service portal for around 14,000 business customers of Southern Communications Group, rebuilt so it can be tested and changed safely.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+            <a href="/case-studies/heritage-direct-debit/" class="service-card fade-in">
+                <p class="card-tag">Heritage · 2022–2025</p>
+                <h3>UK Direct Debit on a US ticketing platform</h3>
+                <p>Memberships and payment plans by Direct Debit, live at Royal Museums Greenwich, the Ashmolean and Ironbridge Gorge Museum Trust.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+            <a href="/case-studies/legacy-modernisation-with-ai/" class="service-card fade-in">
+                <p class="card-tag">Modernisation · 2026</p>
+                <h3>Two legacy systems rebuilt on .NET 10</h3>
+                <p>WebForms applications from 2011 and 2015 rebuilt with AI coding agents under close review, each live within a week of starting.</p>
+                <span class="card-more">Read the case study →</span>
+            </a>
+        </div>
+        <p class="fade-in" style="margin-top: 28px;"><a href="/case-studies/" class="card-more">All case studies →</a></p>
     </div>
 </section>
 
@@ -54,18 +114,18 @@ description: "Elephas Consultancy AB builds, integrates and modernises business-
         <p class="section-sub fade-in">A small company with big tools — and an unusually straightforward way of working.</p>
         <div class="cards-grid">
             <div class="service-card fade-in">
+                <h3>Engineering, not just configuration</h3>
+                <p>When the platform runs out, we write the code: plugins, custom APIs, Azure Functions, SSIS packages and portals. And when Dynamics isn't the right tool for the job, we say so.</p>
+                <a href="/services/power-platform/" class="card-more">Dynamics 365 &amp; Power Platform →</a>
+            </div>
+            <div class="service-card fade-in">
                 <h3>Senior in every line</h3>
                 <p>No juniors, no middlemen. The person writing and reviewing the code has long experience of business-critical systems in both the UK and Sweden — and is the same person you talk to.</p>
             </div>
             <div class="service-card fade-in">
-                <h3>AI in every step</h3>
-                <p>We use AI agents in specification, development, testing and review. That gives a team's pace with a senior's judgement — and it shows in both delivery time and price.</p>
+                <h3>AI under close review</h3>
+                <p>AI coding agents do much of the typing. The specification, the architecture and the review stay with an experienced engineer — which is how two legacy systems went from plan to live in under a week each.</p>
                 <a href="/how-we-work/" class="card-more">Read how we work →</a>
-            </div>
-            <div class="service-card fade-in">
-                <h3>End-to-end responsibility</h3>
-                <p>Architecture, development, deployment and monitoring. We don't hand over a zip file — we make sure the solution works, and keeps working.</p>
-                <a href="/services/solution-architecture/" class="card-more">Architecture &amp; operations →</a>
             </div>
         </div>
     </div>
@@ -76,16 +136,16 @@ description: "Elephas Consultancy AB builds, integrates and modernises business-
         <h2 class="fade-in">Technology we work with every day</h2>
         <p class="section-sub fade-in">Deep expertise across the Microsoft stack — with modern AI tooling as a natural part of the work.</p>
         <div class="chips fade-in">
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Dataverse</span>
             <span class="chip">.NET &amp; C#</span>
-            <span class="chip">Blazor</span>
             <span class="chip">ASP.NET Core</span>
             <span class="chip">Azure</span>
-            <span class="chip">Power Platform</span>
-            <span class="chip">Dynamics 365</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">Business Central</span>
+            <span class="chip">SSIS &amp; KingswaySoft</span>
             <span class="chip">Umbraco CMS</span>
             <span class="chip">SQL Server</span>
-            <span class="chip">EF Core</span>
-            <span class="chip">GitHub Actions</span>
             <span class="chip">Playwright</span>
             <span class="chip">Claude &amp; AI agents</span>
         </div>

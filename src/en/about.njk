@@ -3,19 +3,20 @@ layout: base.njk
 lang: en
 routeKey: about
 permalink: /about/
-title: "About Elephas Consultancy — software consultancy in Kosta, Sweden"
-description: "Elephas Consultancy AB was founded by Leonard Hulley, an engineer with long experience of business-critical systems in the UK and Sweden. Based in Kosta, working remotely with clients across Sweden, the UK and Europe."
+title: "About Elephas Consultancy — Leonard Hulley, Dynamics 365 and .NET engineer"
+description: "Elephas Consultancy is Leonard Hulley: more than 20 years building and integrating business systems, Dynamics since 2013, trading since 2014 and incorporated in Sweden in 2021."
 heroEyebrow: "About"
-heroTitle: "A small company with big tools"
-heroSub: "Elephas Consultancy AB — software development and IT consultancy from Kosta, in the heart of Småland. We work remotely, wherever the client is."
+heroTitle: "Twenty years of business systems, and the person who builds them"
+heroSub: "Software engineering and IT consultancy, trading since 2014 — from Kosta, in the heart of Småland, working with clients in the UK, Sweden and Europe."
 ---
 <section class="section">
     <div class="container">
         <div class="about-intro">
             <div class="prose fade-in">
-                <p>Elephas Consultancy was founded by <strong>Leonard Hulley</strong>, an engineer with long experience of building and delivering business-critical systems in both the UK and Sweden — from bespoke business systems and integrations to project delivery and technical assurance on larger programmes.</p>
-                <p>When you hire Elephas, you talk directly to the person who builds. No sales layer, no juniors learning at your expense, no handovers where details go missing. What we do have is modern AI tooling that gives a single senior engineer the capacity of a full team — <a href="/how-we-work/">read how that works</a>.</p>
-                <p>Working across two countries is part of how Elephas operates. Projects run in English or Swedish, and for clients outside Sweden it also means a supplier incorporated inside the EU. Development happens remotely — the work travels, so the client doesn't have to be nearby.</p>
+                <p>Elephas Consultancy is <strong>Leonard Hulley</strong>: a Microsoft-stack engineer who has spent more than 20 years building and integrating business systems, and has worked with Dynamics CRM and Dynamics 365 since 2013.</p>
+                <p>He learned the trade in small businesses — writing property data feeds for estate agents, building a complete business system for a network of advertising screens largely on his own, and co-founding Infobox Media, a consultancy for direct clients and digital agencies. In 2013 a CRM programme at the Chartered Society of Physiotherapy brought him into Dynamics. From 2014 to 2017 he was at Royal Botanic Gardens, Kew, <a href="/case-studies/royal-botanic-gardens-kew/">recovering its ticketing and CRM programme</a> and then running its IT programme.</p>
+                <p>Elephas began trading in the UK in 2014, became his full-time business when he moved to Sweden in 2017, and was incorporated as Elephas Consultancy AB in 2021. Since then the work has included National Highways, Southern Communications Group, Argyll, UK heritage attractions, and Microsoft partners in the UK and Sweden — <a href="/case-studies/">see the case studies</a>.</p>
+                <p>When you hire Elephas, you talk directly to the person who builds. No sales layer, no juniors learning at your expense, no handovers where details go missing. What we do have is modern AI tooling that gives a single senior engineer the capacity of a team — <a href="/how-we-work/">read how that works</a>.</p>
                 <p>The name? The elephant stands for memory, strength and patience — qualities we think belong in good software and long client relationships.</p>
             </div>
             <figure class="about-portrait fade-in">
@@ -27,6 +28,26 @@ heroSub: "Elephas Consultancy AB — software development and IT consultancy fro
 </section>
 
 <section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">What clients tend to find</h2>
+        <div class="cards-grid">
+            <div class="service-card fade-in">
+                <h3>More technical than the brief</h3>
+                <p>Hired at Kew as a project manager, Leonard ended up designing the integration layer and building half of it. Clients get someone who can run the work and write it.</p>
+            </div>
+            <div class="service-card fade-in">
+                <h3>Kept on when contracts change</h3>
+                <p>At National Highways and again at Argyll, the incoming supplier's first step was to keep the engineer who already knew the system.</p>
+            </div>
+            <div class="service-card fade-in">
+                <h3>Relationships that last</h3>
+                <p>Work with Gateway Ticketing Systems has run since 2017, with Southern Communications Group since 2018, and with Argyll since 2020.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <div class="container">
         <h2 class="fade-in">What we stand for</h2>
         <div class="cards-grid">
@@ -46,6 +67,21 @@ heroSub: "Elephas Consultancy AB — software development and IT consultancy fro
     </div>
 </section>
 
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="fade-in">Qualifications</h2>
+        <div class="chips fade-in">
+            <span class="chip">Microsoft Certified: Power Platform Developer Associate</span>
+            <span class="chip">Postgraduate Diploma in Technology Strategy, The Open University</span>
+            <span class="chip">BA Literature, The Open University</span>
+            <span class="chip">PRINCE2 Practitioner</span>
+            <span class="chip">MSP Practitioner</span>
+            <span class="chip">AgilePM Practitioner</span>
+            <span class="chip">ITIL</span>
+        </div>
+    </div>
+</section>
+
 <section class="section">
     <div class="container">
         <h2 class="fade-in">Facts</h2>
@@ -56,13 +92,18 @@ heroSub: "Elephas Consultancy AB — software development and IT consultancy fro
                 <p class="fact-sub">Reg. no. 559337-5636</p>
             </div>
             <div class="fact-card fade-in">
-                <strong>Founded</strong>
-                <p>2021</p>
+                <strong>Trading since</strong>
+                <p>{{ site.founded }}</p>
+                <p class="fact-sub">Incorporated in Sweden in {{ site.incorporated }}</p>
             </div>
             <div class="fact-card fade-in">
                 <strong>Location</strong>
                 <p>Edavägen 9, 365 43 Kosta</p>
-                <p class="fact-sub">Working remotely across Sweden, the UK and Europe</p>
+                <p class="fact-sub">Working remotely across the UK, Sweden and Europe</p>
+            </div>
+            <div class="fact-card fade-in">
+                <strong>Languages</strong>
+                <p>English and Swedish</p>
             </div>
             <div class="fact-card fade-in">
                 <strong>Availability</strong>
